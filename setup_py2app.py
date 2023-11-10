@@ -45,7 +45,7 @@ PLIST = {
     'NSHighResolutionCapable': True,
     'NSSupportsSuddenTermination': False,
     'LSApplicationCategoryType': 'public.app-category.productivity',
-    'LSRequiresNativeExecution': True,
+    'LSRequiresNativeExecution': False,
     'MinimumSystemVersion': '10.13.0',
     'NSRequiresAquaSystemAppearance': False,
     'NSQuitAlwaysKeepsWindows': False,
