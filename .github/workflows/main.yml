@@ -58,7 +58,7 @@ jobs:
           tar -czf /Users/runner/work/environment.tar.gz $HOME/gtk $HOME/.new_local
 
       - name: Upload Environment
-        uses: actions/upload-artifact@v3.2.1
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: Environment
           path: |
@@ -71,7 +71,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v4
 
       - name: Setup JHbuild
         run: |
@@ -107,7 +107,7 @@ jobs:
           ~/.new_local/bin/jhbuild run osx/build_app.sh
 
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3.2.1
+        uses: actions/upload-artifact@v4.4.3
         with:
           name: Package
           path: |
