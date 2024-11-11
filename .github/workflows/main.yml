@@ -34,13 +34,13 @@ jobs:
 
       # Cache downloaded sources. This shouldn't really depend on the jhbuildrc-custom
       # TODO: Figure out a better cache key for sources.
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: |
             /Users/runner/Sources
           key: ${{ hashFiles('osx/jhbuildrc-custom') }}
 
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: |
             /Users/runner/gtk
